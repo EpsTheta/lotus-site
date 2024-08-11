@@ -12,6 +12,8 @@ export default defineConfig({
 			
 			social: {
 				github: 'https://github.com/Lotus-AU',
+				discord: 'https://discord.gg/project-lotus-pl-1017870413545607209',
+				rss: 'https://linktr.ee/lotusau',
 
 			},
 			customCss: ["./src/style/custom.css"],
@@ -21,15 +23,23 @@ export default defineConfig({
 				},
 				{
 					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Installation', link: '/guides/install/' },
-					],
+					autogenerate: { directory: 'guides' },
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Features',
+					autogenerate: { directory: 'Features' },
+					
 				},
+				{
+					label: 'Roles',
+					autogenerate: { directory: 'roles' },
+					
+				},
+				{
+					label: 'Misc',
+					autogenerate: { directory: 'Misc'},
+				},
+				
 			],
 		}),
 	],

@@ -1,0 +1,73 @@
+---
+title: Chat Commands
+description: The installation guide for Project:\ Lotus
+---
+
+### Only usable by host
+
+| Function                         | Command                | Aliases      |
+| -------------------------------- | ---------------------- | ------------ |
+| Shows all players and their IDs  | `/id`                  |              |
+| Displays message to ALL players  | `/say [msg]`           | `/s [msg]`   |
+| Kicks the provided player        | `/kick [name]`         | `/kick [id]` |
+| Bans the provided player         | `/ban [name]`          | `/ban [id]`  |
+| Output log to desktop            | `/dump`                | `Ctrl`+`F1`  |
+| Reloads local title files        | `/tload`               |              |
+
+
+###  Usable by everyone!
+
+##### About The Most Recent Game
+| Function                           | Command       | Aliases            |
+|------------------------------------|---------------|--------------------|
+| Show Game Results                  | `/lastresult` | `/l`               |
+| Show Winner                        | `/winner`     | `/w`               |
+
+##### Configurable Commands
+| Function                           | Command                            |
+|------------------------------------|------------------------------------|
+| Change My Color                    | `/color`                           |
+| Change My Level                    | `/level`                           |
+| Change My Name                     | `/name`                            |
+
+##### General Lobby/Game Info
+| Function                           | Command              | Aliases     |
+|------------------------------------|----------------------|-------------|
+| Show Active Roles Settings         | `/now roles`         | `/n r`      |
+| Show Active Settings               | `/now`               | `/n`        |
+| Show % for All Roles > 0%          | `/perc`              | `/p`        |
+| Show Role Description              | `/roles [role]`      | `/r [role]` |
+
+
+##### Player Info In Game
+| Function                           | Command         | Aliases          |
+|------------------------------------|-----------------|------------------|
+| Show Basic Role Description        | `/myrole`       | `/m`             |
+| Show Current Role Option           | `/options`      | `/o`             |
+| Show Full Role Description         | `/description`  | `/desc`          |
+
+
+## Friends
+
+The native Among Us friends list is often considered pointless. However, with this system, you can create your own custom friend list easily using simple commands through the command line.
+
+The friend list information is stored in the file `LOTUS_DATA/Friends.txt`.
+
+Commands:
+
+| Command                     | Function                                        |
+| --------------------------- | ----------------------------------------------- |
+| `/friend add [playerId]`    | Adds a friend based on their player ID (1 - 15) |
+| `/friend add [name]`        | Adds a friend based on their username           |
+| `/friend remove [index]`    | Removes a friend based on their list position   |
+| `/friend list`              | Lists all friends                               |
+
+
+## Other Useful Commands
+
+Here are some additional commands that you might find useful:
+
+- `/kick [id]`: Kick a player based on their ID.
+- `/ban [id]`: Ban a player based on their ID.
+
+Use `/kick` or `/ban` without specifying an ID to obtain a list of available player IDs.

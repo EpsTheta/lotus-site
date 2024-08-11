@@ -3,7 +3,7 @@ title: "Home"
 description: Welcome to the Project Lotus Wiki!
 template: splash
 hero:
-  tagline: Welcome to the Project Lotus Wiki!
+  tagline: Welcome to Project Lotus!
   image:
     file: ../../assets/Lotus-Icon.png
   actions:
@@ -14,8 +14,24 @@ hero:
     - text: Join our Discord!
       link: /discord
       icon: discord
-footer: test
 ---
-import Footer from '../../components/Footer.astro'
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import Footer from '../../components/Footer.astro';
 
 <Footer />
+
+## See more.
+<CardGrid stagger>
+	<Card title="Starting out?" icon="pencil">
+		Read our [Introduction guide!](./introduction/) It'll help you.
+	</Card>
+	<Card title="Looking for Roles?" icon="add-document">
+		Click here and it'll take you to the roles list!
+	</Card>
+	<Card title="Addon Developer?" icon="setting">
+		Read our developer documentation to figure out how to start!
+	</Card>
+	<Card title="and also.." icon="open-book">
+		Just remember to have fun.. Welcome to Lotus!
+	</Card>
+</CardGrid>
